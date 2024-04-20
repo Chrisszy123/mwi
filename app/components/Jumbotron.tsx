@@ -1,0 +1,43 @@
+"use client";
+
+import Image from "next/image";
+import { useEffect, useState } from "react";
+
+function Jumbotron() {
+  const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setRotation(prevRotation => prevRotation + 1); // Increment rotation angle by 1 degree
+    }, 10); // Adjust the interval time as needed
+
+    return () => clearInterval(intervalId); 
+  },[])
+  return (
+    <div id="home" className="w-full h-[100vh] py-1 px-1 md:py-2 md:px-24 flex flex-col justify-center items-center">
+      <div className="flex flex-col md:w-[70%] w-[100%] justify-center items-center">
+        <h1 className="font-[900] md:text-[86px] text-[55px] text-center uppercase w-full text-[#FCFCFC]">
+          Unleash Your Brand's Potential
+        </h1>
+        <div className="flex justify-center items-center mt-[3rem]">
+          <div className="flex flex-col justify-center items-center self-end">
+            {/* <span className="w-[60%] flex flex-col justify-center items-center">
+              <h2 className="font-[700] text-[48px] text-center text-[#FCFCFC]">
+                {" "}
+                <span className="text-[#ED9E1F]">Expand </span>Your Reach
+              </h2>
+              <p className="w-[100%] tracking-[1px] text-[#FCFCFC]">
+                Take your brand to the next level with our global network of
+                publications. Benefit from customizable geographic targeting and
+                premium site postings.
+              </p>
+            </span> */}
+            <Image src="/mwi.png" alt="mwi" width={200} height={200} style={{ transform: `rotate(${rotation}deg)` }}/>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Jumbotron;

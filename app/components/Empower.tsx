@@ -17,7 +17,7 @@ const Empower = () => {
             </span>
       <div className="flex flex-col md:flex-row md:justify-center justify-start md:items-center items-start md:gap-[4rem] gap-[1rem] md:w-[80%] w-full px-4 md:px-0">
         <div className="font-[700] text-[35px] relative">
-            <Image className="absolute" style={{top: "61px", left: "-10px"}} src="/circle.png" width={200} height={250} alt="circle" />
+            <Image className="absolute lg:top-[50px] xs:hidden top-[50px]" style={{ left: "-10px"}} src="/circle.png" width={200} height={250} alt="circle" />
           <span className="text-[#ED9E1F]">Empower</span> Your <br /> Message
         </div>
         <span className="md:w-[60%] w-full tracking-[1px]">

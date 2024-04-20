@@ -19,9 +19,9 @@ const Navbar = ({color, contact, mobileColor}: any) => {
             
         </div>
         <button className="block lg:hidden flex-col flex gap-[.3rem]" onClick={toggleNav}>
-            <span className={`h-[3px] w-[25px] bg-[${mobileColor}] block`}></span>
-            <span className={`h-[3px] w-[25px] bg-[${mobileColor}] block`}></span>
-            <span className={`h-[3px] w-[25px] bg-[${mobileColor}] block`}></span>
+            <span className={`h-[3px] w-[25px] block`} style={{backgroundColor: mobileColor}}></span>
+            <span className={`h-[3px] w-[25px] block`} style={{backgroundColor: mobileColor}}></span>
+            <span className={`h-[3px] w-[25px] block`} style={{backgroundColor: mobileColor}}></span>
           </button>
           {showNav ? (
              <div className='items-center justify-center block lg:hidden absolute w-[80vw] bg-[#1c1c1c] h-[50vh] py-[2rem] rounded-[10px]' style={{zIndex: '111', top: "50px", right: '0'}} >

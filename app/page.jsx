@@ -37,7 +37,7 @@ export default function Home() {
           backgroundSize: 'cover', // Optional: Adjust background size as needed
           backgroundPosition: 'center', // Optional: Adjust background position as needed
         }}></div>
-      <Navbar color="#FCFCFC" mobileColor="#fff"/>
+      <Navbar color="#FCFCFC" mobileColor="#FCFCFC"/>
       <Jumbotron />
       
       <Empower />

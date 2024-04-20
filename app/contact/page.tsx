@@ -6,13 +6,11 @@ import Footer from "../components/Footer";
 
 const Contact = () => {
   const form: any = useRef();
-
   const sendEmail = (e: any) => {
     e.preventDefault();
-
     emailjs
-      .sendForm("service_bubuelo", "template_7x9i0wq", form.current, {
-        publicKey: "NWiOohJYAWI8N7KHX",
+      .sendForm(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string, form.current, {
+        publicKey: process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY as string,
       })
       .then(
         () => {

@@ -3,7 +3,7 @@ import React from "react";
 
 const Empower = () => {
   return (
-    <div id="" className="w-full py-1 px-1 md:py-6 md:px-24 flex flex-col justify-center items-center gap-[4rem]">
+    <div id="expand" className="w-full py-1 px-1 md:py-6 md:px-24 flex flex-col justify-center items-center gap-[4rem]">
       <span className="md:w-[60%] w-full flex flex-col md:justify-center justify-start md:items-center items-start px-4 md:px-0">
               <h2 className="font-[700] md:text-[48px] text-[30px] md:w-full w-[50%] md:text-center">
                 {" "}

@@ -29,6 +29,7 @@ const Navbar = ({color, contact, mobileColor}: any) => {
                  <li className='text-white' style={active === 'home' ? {borderBottom: "3px solid #ED9E1F"} : {}} onClick={() => setActive('home')}><a href="/" className='no-underline'>Home</a></li>
                  <li className='text-white' style={active === 'services' ? {borderBottom: "3px solid #ED9E1F"} : {}} onClick={() => setActive('services')}><a href="#services" className='no-underline'>Our Services</a></li>
                  <li className='text-white' style={active === 'business' ? {borderBottom: "3px solid #ED9E1F"} : {}} onClick={() => setActive('business')}><a href="#business" className='no-underline'>Business We Work With</a></li>
+                 <li style={active === 'about' ? {borderBottom: "3px solid #ED9E1F"} : {}} onClick={() => setActive('about')}><a href="#about" className='no-underline'>About Us</a></li>
                  <li className='text-white' style={active === 'contact' ? {borderBottom: "3px solid #ED9E1F"} : {}} onClick={() => setActive('contact')}><Link href="/contact" className='no-underline'>Contact Us</Link></li>
              </ul>
          </div>
@@ -38,6 +39,7 @@ const Navbar = ({color, contact, mobileColor}: any) => {
                 <li style={active === 'home' ? {borderBottom: "3px solid #ED9E1F"} : {}} onClick={() => setActive('home')}><a href="/" className='no-underline'>Home</a></li>
                 <li style={active === 'services' ? {borderBottom: "3px solid #ED9E1F"} : {}} onClick={() => setActive('services')}><a href="#services" className='no-underline'>Our Services</a></li>
                 <li style={active === 'business' ? {borderBottom: "3px solid #ED9E1F"} : {}} onClick={() => setActive('business')}><a href="#business" className='no-underline'>Business We Work With</a></li>
+                <li style={active === 'about' ? {borderBottom: "3px solid #ED9E1F"} : {}} onClick={() => setActive('about')}><a href="#about" className='no-underline'>About Us</a></li>
                 <li style={active === 'contact' ? {borderBottom: "3px solid #ED9E1F"} : {}} onClick={() => setActive('contact')}><Link href="/contact" className='no-underline'>Contact Us</Link></li>
             </ul>
         </div>

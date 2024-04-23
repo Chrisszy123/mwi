@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { FaArrowDown } from "react-icons/fa";
 
 function Jumbotron() {
   const [rotation, setRotation] = useState(0);
@@ -33,8 +34,11 @@ function Jumbotron() {
               </p>
             </span> */}
             <Image src="/mwi.png" alt="mwi" width={200} height={200} style={{ transform: `rotate(${rotation}deg)` }}/>
+            
           </div>
+          
         </div>
+        <button className="text-white px-[3rem] py-[.5rem] flex gap-[1rem] justify-center items-center rounded-[4px] mt-[1rem] md:mt-[2rem] mb-[1rem]" style={{border: '1px solid #ED9E1F'}}><a href="#expand">ENTER</a> <FaArrowDown /> </button>
       </div>
     </div>
   );

@@ -39,7 +39,6 @@ export default function Home() {
         }}></div>
       <Navbar color="#FCFCFC" mobileColor="#FCFCFC"/>
       <Jumbotron />
-      
       <Empower />
       <Elevate />
       <Business />

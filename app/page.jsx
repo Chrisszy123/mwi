@@ -31,12 +31,6 @@ export default function Home() {
   }, []); 
   return (
     <main className="relative">
-      <div className="absolute h-[100vh] w-[100vw]"style={{
-          zIndex:"-10",
-          backgroundImage: `url('/bg.png')`,
-          backgroundSize: 'cover', // Optional: Adjust background size as needed
-          backgroundPosition: 'center', // Optional: Adjust background position as needed
-        }}></div>
       <Navbar color="#FCFCFC" mobileColor="#FCFCFC"/>
       <Jumbotron />
       <Empower />

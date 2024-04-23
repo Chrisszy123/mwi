@@ -16,7 +16,7 @@ function Jumbotron() {
   },[])
   return (
     <div id="home" className="relative w-full h-[100vh] py-1 px-1 md:py-2 md:px-24 flex flex-col justify-center items-center">
-       <div className="absolute h-[110vh] w-[100vw]"style={{
+       <div className="absolute md:h-[110vh] h-[100vh] w-[100vw]"style={{
           zIndex:"-10",
           top: "-78px",
           backgroundImage: `url('/bg.png')`,
@@ -24,10 +24,10 @@ function Jumbotron() {
           backgroundPosition: 'center', // Optional: Adjust background position as needed
         }}></div>
       <div className="flex flex-col md:w-[70%] w-[100%] h-[100%] justify-center items-center">
-        <h1 className="font-[900] md:text-[86px] text-[55px] text-center uppercase w-full text-[#FCFCFC]">
+        <h1 className="font-[900] md:text-[86px] text-[45px] text-center uppercase w-full text-[#FCFCFC]">
           Unleash Your Brand's Potential
         </h1>
-        <div className="flex justify-center items-center mt-[1rem]">
+        <div className="flex justify-center items-center">
           <div className="flex flex-col justify-center items-center self-end">
             {/* <span className="w-[60%] flex flex-col justify-center items-center">
               <h2 className="font-[700] text-[48px] text-center text-[#FCFCFC]">

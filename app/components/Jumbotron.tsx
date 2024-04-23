@@ -18,7 +18,7 @@ function Jumbotron() {
     <div id="home" className="relative w-full h-[100vh] py-1 px-1 md:py-2 md:px-24 flex flex-col justify-center items-center">
        <div className="absolute md:h-[110vh] h-[100vh] w-[100vw]"style={{
           zIndex:"-10",
-          top: "-78px",
+          top: "-128px",
           backgroundImage: `url('/bg.png')`,
           backgroundSize: 'cover', // Optional: Adjust background size as needed
           backgroundPosition: 'center', // Optional: Adjust background position as needed

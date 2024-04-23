@@ -13,7 +13,7 @@ const Footer = () => {
           backgroundPosition: 'center', // Optional: Adjust background position as needed
         }}></div>
         <div className='flex md:flex-row flex-col justify-between md:items-center items-start md:gap-0 gap-[1rem] w-[90%]'>
-        <Image src="/logo.png" alt='logo' width={150} height={150}/>
+        <Image src="/logowhite.png" alt='logo' width={150} height={150}/>
             <div className='flex md:flex-row flex-col justify-between md:items-center items-start gap-[2rem] text-[16px]'>
                 <Link href="#">About us</Link>
                 <Link href="#">Services</Link>

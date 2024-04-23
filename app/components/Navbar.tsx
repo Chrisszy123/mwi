@@ -14,7 +14,7 @@ const Navbar = ({color, contact, mobileColor}: any) => {
   return (
     <nav className='relative flex justify-between w-full py-4 px-6 md:py-6 md:px-24'>
         <div>
-            <Image src="/logo.png" alt='logo' width={150} height={150}/>
+            <Image className='cursor-pointer' src="/logoblack.png" alt='logo' width={150} height={150}/>
             {/* <h2 className='font-[900] text-[#ED9E1F] text-[20px]'>LOGO</h2> */}
             
         </div>

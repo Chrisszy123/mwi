@@ -10,25 +10,25 @@ function Jumbotron() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setRotation(prevRotation => prevRotation + 1); // Increment rotation angle by 1 degree
-    }, 10); // Adjust the interval time as needed
+    }, 100); // Adjust the interval time as needed
 
     return () => clearInterval(intervalId); 
   },[])
   return (
     <div id="home" className="relative w-full h-[100vh] py-1 px-1 md:py-2 md:px-24 flex flex-col justify-center items-center">
-       <div className="absolute md:h-[110vh] h-[100vh] w-[100vw]"style={{
+       <div className="absolute md:h-[110vh] h-[110vh] w-[100vw]"style={{
           zIndex:"-10",
           top: "-148px",
           backgroundImage: `url('/bg.png')`,
           backgroundSize: 'cover', // Optional: Adjust background size as needed
           backgroundPosition: 'center', // Optional: Adjust background position as needed
         }}></div>
-      <div className="flex flex-col md:w-[70%] w-[100%] h-[100%] justify-center items-center">
-        <h1 className="font-[900] md:text-[86px] text-[45px] text-center uppercase w-full text-[#FCFCFC]">
+      <div className="flex flex-col md:w-[70%] w-[100%] h-[100%] md:justify-center justify-start items-center">
+        <h1 className="font-[900] md:text-[86px] text-[45px] text-center uppercase w-full text-[#FCFCFC] md:mt-0 mt-[4rem]">
           Unleash Your Brand's Potential
         </h1>
         <div className="flex justify-center items-center">
-          <div className="flex flex-col justify-center items-center self-end">
+          <div className="flex flex-col justify-center items-center self-end md:gap-0 gap-[1rem]">
             {/* <span className="w-[60%] flex flex-col justify-center items-center">
               <h2 className="font-[700] text-[48px] text-center text-[#FCFCFC]">
                 {" "}

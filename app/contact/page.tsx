@@ -1,10 +1,11 @@
 'use client'
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const Contact = () => {
+  const [success, setSuccess] = useState(false)
   const form: any = useRef();
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -14,7 +15,11 @@ const Contact = () => {
       })
       .then(
         () => {
+          setSuccess(true)
           console.log("SUCCESS!");
+          setTimeout(() => {
+            location.reload()
+          }, 3000)
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -31,6 +36,7 @@ const Contact = () => {
           Reach out, and let's create a universe of possibilities together!
         </h5>
       </div>
+      {success && (<div className="text-green-500 font-[600] text-[16px] text-center mb-[1rem]"> MESSAGE SENT SUCCESFULLY </div>)}
       <div className="bg-[##EDEDED] grid md:grid-cols-2 grid-cols-1 gap-[2rem] justify-between md:w-[70%] w-full rounded-[10px] md:ml-24 ml-0 py-4 px-4 md:py-6 md:px-6 mt-[1rem] md:mt-0" style={{border: "1px solid #DCDBDB"}}>
         <div className="flex flex-col gap-[1rem]">
           <div>

@@ -26,7 +26,7 @@ const Service = () => {
   return (
     <div id='services' className="w-full py-1 px-1 md:py-6 md:px-24 flex flex-col justify-center items-center mt-[3rem]">
         <div className="h-[8px] w-[120px] bg-[#ED9E1F] rounded-[8px]"></div>
-      <div className="flex flex-col justify-center items-center mb-[2rem]">
+      <div className="flex flex-col justify-center items-center mb-[2rem] md:mt-[2rem] mt-[0]">
         <h2 className="md:font-[400] font-[500] md:text-[35px] text-[25px] tracking-[.5px] text-center">
             Elevate your brand with our solutions
         </h2> 

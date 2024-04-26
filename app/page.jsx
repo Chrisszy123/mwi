@@ -31,7 +31,7 @@ export default function Home() {
   }, []); 
   return (
     <main className="relative">
-      <Navbar color="#FCFCFC" mobileColor="#FCFCFC"/>
+      <Navbar color="#FCFCFC" mobileColor="#FCFCFC" imageUrl="/mwi-01.png" service="#services" business="#business" about="#about"/>
       <Jumbotron />
       <Empower />
       <Elevate />

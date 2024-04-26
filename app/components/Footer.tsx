@@ -15,9 +15,9 @@ const Footer = () => {
         <div className='flex md:flex-row flex-col justify-between md:items-center items-start md:gap-0 gap-[1rem] w-[90%]'>
         <Image src="/mwi-2-01.png" alt='logo' width={150} height={150}/>
             <div className='flex md:flex-row flex-col justify-between md:items-center items-start gap-[2rem] text-[16px]'>
-                <Link href="#">About us</Link>
-                <Link href="#">Services</Link>
-                <Link href="/contact">Contact us</Link>
+                <Link href="#">Twitter</Link>
+                {/* <Link href="#">Services</Link> */}
+                <Link href="/contact">Mail</Link>
             </div>
         </div>
         <div className='w-full h-[2px] bg-[#6C7E93] opacity-[.2]'></div>

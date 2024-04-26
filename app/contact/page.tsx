@@ -28,7 +28,7 @@ const Contact = () => {
   };
   return (
     <div>
-      <Navbar color="#1C1C1C" contact mobileColor="#000"/>
+      <Navbar color="#1C1C1C" contact mobileColor="#000" imageUrl="/mwi-2-01.png" service="/" business="/" about="/"/>
       <div className="md:p-0 p-4">
       <div className="flex flex-col justify-between w-full py-1 px-1 md:py-6 md:px-24">
         <h2 className="text-[48px] font-[800]">Get in touch</h2>
@@ -57,9 +57,9 @@ const Contact = () => {
         <div className="h-[100%] w-[100%] bg-[#000] rounded-lg"></div>
       </div>
       </div>
-      <div className="block md:hidden">
+      
         <Footer />
-      </div>
+      
     </div>
   );
 };
